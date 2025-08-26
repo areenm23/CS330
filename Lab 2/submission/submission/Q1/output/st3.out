@@ -1,0 +1,65 @@
+3191  execve("./pprime", ["./pprime", "50000", "3"], 0x7fff4779f838 /* 18 vars */) = 0
+3191  brk(NULL)                         = 0x58a7e254f000
+3191  arch_prctl(0x3001 /* ARCH_??? */, 0x7ffc5853b160) = -1 EINVAL (Invalid argument)
+3191  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7a6f214b4000
+3191  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+3191  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+3191  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=29392, ...}, AT_EMPTY_PATH) = 0
+3191  mmap(NULL, 29392, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7a6f214ac000
+3191  close(3)                          = 0
+3191  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+3191  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+3191  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=940560, ...}, AT_EMPTY_PATH) = 0
+3191  mmap(NULL, 942344, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7a6f213c5000
+3191  mmap(0x7a6f213d3000, 507904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe000) = 0x7a6f213d3000
+3191  mmap(0x7a6f2144f000, 372736, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8a000) = 0x7a6f2144f000
+3191  mmap(0x7a6f214aa000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe4000) = 0x7a6f214aa000
+3191  close(3)                          = 0
+3191  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+3191  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+3191  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+3191  pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+3191  pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\325\31p\226\367\t\200\30)\261\30\257\33|\366c"..., 68, 896) = 68
+3191  newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+3191  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+3191  mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7a6f2119c000
+3191  mprotect(0x7a6f211c4000, 2023424, PROT_NONE) = 0
+3191  mmap(0x7a6f211c4000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7a6f211c4000
+3191  mmap(0x7a6f21359000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7a6f21359000
+3191  mmap(0x7a6f213b2000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x7a6f213b2000
+3191  mmap(0x7a6f213b8000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7a6f213b8000
+3191  close(3)                          = 0
+3191  mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7a6f21199000
+3191  arch_prctl(ARCH_SET_FS, 0x7a6f21199740) = 0
+3191  set_tid_address(0x7a6f21199a10)   = 3191
+3191  set_robust_list(0x7a6f21199a20, 24) = 0
+3191  rseq(0x7a6f2119a0e0, 0x20, 0, 0x53053053) = 0
+3191  mprotect(0x7a6f213b2000, 16384, PROT_READ) = 0
+3191  mprotect(0x7a6f214aa000, 4096, PROT_READ) = 0
+3191  mprotect(0x58a7aaf2b000, 4096, PROT_READ) = 0
+3191  mprotect(0x7a6f214ee000, 8192, PROT_READ) = 0
+3191  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+3191  munmap(0x7a6f214ac000, 29392)     = 0
+3191  clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7a6f21199a10) = 3192
+3191  clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD <unfinished ...>
+3192  set_robust_list(0x7a6f21199a20, 24 <unfinished ...>
+3191  <... clone resumed>, child_tidptr=0x7a6f21199a10) = 3193
+3191  wait4(3192,  <unfinished ...>
+3192  <... set_robust_list resumed>)    = 0
+3193  set_robust_list(0x7a6f21199a20, 24) = 0
+3192  exit_group(202)                   = ?
+3192  +++ exited with 202 +++
+3191  <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 202}], 0, NULL) = 3192
+3191  --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=3192, si_uid=1000, si_status=202, si_utime=0, si_stime=0} ---
+3191  wait4(3193,  <unfinished ...>
+3193  exit_group(67)                    = ?
+3193  +++ exited with 67 +++
+3191  <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 67}], 0, NULL) = 3193
+3191  --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=3193, si_uid=1000, si_status=67, si_utime=0, si_stime=0} ---
+3191  newfstatat(1, "", {st_mode=S_IFREG|0664, st_size=142, ...}, AT_EMPTY_PATH) = 0
+3191  getrandom("\x2d\x11\x02\xad\xf1\xa6\x3f\x24", 8, GRND_NONBLOCK) = 8
+3191  brk(NULL)                         = 0x58a7e254f000
+3191  brk(0x58a7e2570000)               = 0x58a7e2570000
+3191  write(1, "Testcase 3 Expected: 13 Output: "..., 72) = 72
+3191  exit_group(0)                     = ?
+3191  +++ exited with 0 +++

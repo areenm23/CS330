@@ -1,0 +1,212 @@
+3454  execve("./cprime", ["./cprime", "500000", "8", "3"], 0x7ffde023a6e0 /* 18 vars */) = 0
+3454  brk(NULL)                         = 0x5666cfaa0000
+3454  arch_prctl(0x3001 /* ARCH_??? */, 0x7ffed9888fb0) = -1 EINVAL (Invalid argument)
+3454  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f498b24f000
+3454  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+3454  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+3454  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=29392, ...}, AT_EMPTY_PATH) = 0
+3454  mmap(NULL, 29392, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f498b247000
+3454  close(3)                          = 0
+3454  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+3454  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+3454  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=940560, ...}, AT_EMPTY_PATH) = 0
+3454  mmap(NULL, 942344, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f498b160000
+3454  mmap(0x7f498b16e000, 507904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe000) = 0x7f498b16e000
+3454  mmap(0x7f498b1ea000, 372736, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8a000) = 0x7f498b1ea000
+3454  mmap(0x7f498b245000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe4000) = 0x7f498b245000
+3454  close(3)                          = 0
+3454  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+3454  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+3454  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+3454  pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+3454  pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\325\31p\226\367\t\200\30)\261\30\257\33|\366c"..., 68, 896) = 68
+3454  newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+3454  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+3454  mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f498af37000
+3454  mprotect(0x7f498af5f000, 2023424, PROT_NONE) = 0
+3454  mmap(0x7f498af5f000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f498af5f000
+3454  mmap(0x7f498b0f4000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f498b0f4000
+3454  mmap(0x7f498b14d000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x7f498b14d000
+3454  mmap(0x7f498b153000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f498b153000
+3454  close(3)                          = 0
+3454  mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f498af34000
+3454  arch_prctl(ARCH_SET_FS, 0x7f498af34740) = 0
+3454  set_tid_address(0x7f498af34a10)   = 3454
+3454  set_robust_list(0x7f498af34a20, 24) = 0
+3454  rseq(0x7f498af350e0, 0x20, 0, 0x53053053) = 0
+3454  mprotect(0x7f498b14d000, 16384, PROT_READ) = 0
+3454  mprotect(0x7f498b245000, 4096, PROT_READ) = 0
+3454  mprotect(0x5666c1c9c000, 4096, PROT_READ) = 0
+3454  mprotect(0x7f498b289000, 8192, PROT_READ) = 0
+3454  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+3454  munmap(0x7f498b247000, 29392)     = 0
+3454  getrandom("\xc9\x21\xce\xe4\x4c\xb8\x9d\xd6", 8, GRND_NONBLOCK) = 8
+3454  brk(NULL)                         = 0x5666cfaa0000
+3454  brk(0x5666cfac1000)               = 0x5666cfac1000
+3454  pipe([3, 4])                      = 0
+3454  clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f498af34a10) = 3455
+3454  close(4)                          = 0
+3455  set_robust_list(0x7f498af34a20, 24 <unfinished ...>
+3454  pipe( <unfinished ...>
+3455  <... set_robust_list resumed>)    = 0
+3454  <... pipe resumed>[4, 5])         = 0
+3454  clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD <unfinished ...>
+3455  close(3)                          = 0
+3454  <... clone resumed>, child_tidptr=0x7f498af34a10) = 3456
+3454  close(5)                          = 0
+3454  pipe([5, 6])                      = 0
+3456  set_robust_list(0x7f498af34a20, 24 <unfinished ...>
+3454  clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD <unfinished ...>
+3456  <... set_robust_list resumed>)    = 0
+3456  close(4)                          = 0
+3454  <... clone resumed>, child_tidptr=0x7f498af34a10) = 3457
+3454  close(6)                          = 0
+3454  pipe([6, 7])                      = 0
+3457  set_robust_list(0x7f498af34a20, 24 <unfinished ...>
+3454  clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD <unfinished ...>
+3457  <... set_robust_list resumed>)    = 0
+3454  <... clone resumed>, child_tidptr=0x7f498af34a10) = 3458
+3454  close(7)                          = 0
+3454  pipe([7, 8])                      = 0
+3457  close(5 <unfinished ...>
+3454  clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD <unfinished ...>
+3458  set_robust_list(0x7f498af34a20, 24 <unfinished ...>
+3457  <... close resumed>)              = 0
+3458  <... set_robust_list resumed>)    = 0
+3454  <... clone resumed>, child_tidptr=0x7f498af34a10) = 3459
+3459  set_robust_list(0x7f498af34a20, 24 <unfinished ...>
+3454  close(8 <unfinished ...>
+3459  <... set_robust_list resumed>)    = 0
+3454  <... close resumed>)              = 0
+3458  close(6 <unfinished ...>
+3454  pipe( <unfinished ...>
+3459  close(7 <unfinished ...>
+3458  <... close resumed>)              = 0
+3454  <... pipe resumed>[8, 9])         = 0
+3459  <... close resumed>)              = 0
+3454  clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f498af34a10) = 3460
+3460  set_robust_list(0x7f498af34a20, 24 <unfinished ...>
+3454  close(9 <unfinished ...>
+3460  <... set_robust_list resumed>)    = 0
+3454  <... close resumed>)              = 0
+3454  pipe( <unfinished ...>
+3460  close(8 <unfinished ...>
+3454  <... pipe resumed>[9, 10])        = 0
+3460  <... close resumed>)              = 0
+3454  clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f498af34a10) = 3461
+3461  set_robust_list(0x7f498af34a20, 24 <unfinished ...>
+3454  close(10 <unfinished ...>
+3461  <... set_robust_list resumed>)    = 0
+3454  <... close resumed>)              = 0
+3454  pipe( <unfinished ...>
+3461  close(9 <unfinished ...>
+3454  <... pipe resumed>[10, 11])       = 0
+3461  <... close resumed>)              = 0
+3454  clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f498af34a10) = 3462
+3454  close(11 <unfinished ...>
+3462  set_robust_list(0x7f498af34a20, 24 <unfinished ...>
+3454  <... close resumed>)              = 0
+3462  <... set_robust_list resumed>)    = 0
+3454  read(3,  <unfinished ...>
+3462  close(10)                         = 0
+3455  write(4, "\203\30\0\0", 4)        = 4
+3454  <... read resumed>"\203\30\0\0", 8) = 4
+3455  close(4 <unfinished ...>
+3454  close(3 <unfinished ...>
+3455  <... close resumed>)              = 0
+3454  <... close resumed>)              = 0
+3454  wait4(-1,  <unfinished ...>
+3455  exit_group(0)                     = ?
+3455  +++ exited with 0 +++
+3454  <... wait4 resumed>NULL, 0, NULL) = 3455
+3454  --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=3455, si_uid=1000, si_status=0, si_utime=1, si_stime=0} ---
+3454  read(4,  <unfinished ...>
+3456  write(5, "S\25\0\0", 4 <unfinished ...>
+3454  <... read resumed>"S\25\0\0", 8)  = 4
+3456  <... write resumed>)              = 4
+3454  close(4 <unfinished ...>
+3456  close(5 <unfinished ...>
+3454  <... close resumed>)              = 0
+3456  <... close resumed>)              = 0
+3454  wait4(-1,  <unfinished ...>
+3456  exit_group(0)                     = ?
+3456  +++ exited with 0 +++
+3454  <... wait4 resumed>NULL, 0, NULL) = 3456
+3454  --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=3456, si_uid=1000, si_status=0, si_utime=1, si_stime=0} ---
+3454  read(5,  <unfinished ...>
+3458  write(7, "\330\23\0\0", 4)        = 4
+3458  close(7)                          = 0
+3458  exit_group(0)                     = ?
+3458  +++ exited with 0 +++
+3454  <... read resumed>0x7ffed9888bd8, 8) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+3454  --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=3458, si_uid=1000, si_status=0, si_utime=2, si_stime=0} ---
+3454  read(5,  <unfinished ...>
+3460  write(9, "0\23\0\0", 4)           = 4
+3460  close(9)                          = 0
+3460  exit_group(0)                     = ?
+3460  +++ exited with 0 +++
+3454  <... read resumed>0x7ffed9888bd8, 8) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+3454  --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=3460, si_uid=1000, si_status=0, si_utime=2, si_stime=0} ---
+3454  read(5,  <unfinished ...>
+3457  write(6, "n\24\0\0", 4 <unfinished ...>
+3454  <... read resumed>"n\24\0\0", 8)  = 4
+3457  <... write resumed>)              = 4
+3454  close(5 <unfinished ...>
+3457  close(6 <unfinished ...>
+3454  <... close resumed>)              = 0
+3457  <... close resumed>)              = 0
+3454  wait4(-1, NULL, 0, NULL)          = 3458
+3454  read(6, "\330\23\0\0", 8)         = 4
+3454  close(6 <unfinished ...>
+3457  exit_group(0 <unfinished ...>
+3454  <... close resumed>)              = 0
+3457  <... exit_group resumed>)         = ?
+3454  wait4(-1, NULL, 0, NULL)          = 3460
+3454  read(7,  <unfinished ...>
+3457  +++ exited with 0 +++
+3454  <... read resumed>0x7ffed9888bd8, 8) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+3454  --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=3457, si_uid=1000, si_status=0, si_utime=3, si_stime=0} ---
+3454  read(7,  <unfinished ...>
+3459  write(8, "T\23\0\0", 4 <unfinished ...>
+3454  <... read resumed>"T\23\0\0", 8)  = 4
+3459  <... write resumed>)              = 4
+3459  close(8 <unfinished ...>
+3454  close(7 <unfinished ...>
+3459  <... close resumed>)              = 0
+3454  <... close resumed>)              = 0
+3459  exit_group(0 <unfinished ...>
+3454  wait4(-1,  <unfinished ...>
+3459  <... exit_group resumed>)         = ?
+3454  <... wait4 resumed>NULL, 0, NULL) = 3457
+3454  read(8, "0\23\0\0", 8)            = 4
+3454  close(8)                          = 0
+3454  wait4(-1,  <unfinished ...>
+3459  +++ exited with 0 +++
+3454  <... wait4 resumed>NULL, 0, NULL) = 3459
+3454  --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=3459, si_uid=1000, si_status=0, si_utime=3, si_stime=0} ---
+3454  read(9,  <unfinished ...>
+3462  write(11, "\256\22\0\0", 4)       = 4
+3462  close(11)                         = 0
+3462  exit_group(0)                     = ?
+3462  +++ exited with 0 +++
+3454  <... read resumed>0x7ffed9888bd8, 8) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+3454  --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=3462, si_uid=1000, si_status=0, si_utime=4, si_stime=0} ---
+3454  read(9,  <unfinished ...>
+3461  write(10, "\364\22\0\0", 4)       = 4
+3454  <... read resumed>"\364\22\0\0", 8) = 4
+3461  close(10)                         = 0
+3454  close(9)                          = 0
+3461  exit_group(0 <unfinished ...>
+3454  wait4(-1,  <unfinished ...>
+3461  <... exit_group resumed>)         = ?
+3454  <... wait4 resumed>NULL, 0, NULL) = 3462
+3454  read(10, "\256\22\0\0", 8)        = 4
+3454  close(10)                         = 0
+3454  wait4(-1,  <unfinished ...>
+3461  +++ exited with 0 +++
+3454  <... wait4 resumed>NULL, 0, NULL) = 3461
+3454  --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=3461, si_uid=1000, si_status=0, si_utime=4, si_stime=0} ---
+3454  newfstatat(1, "", {st_mode=S_IFREG|0664, st_size=181, ...}, AT_EMPTY_PATH) = 0
+3454  write(1, "Testcase: 3 numP: 8 Expected: 41"..., 90) = 90
+3454  exit_group(0)                     = ?
+3454  +++ exited with 0 +++

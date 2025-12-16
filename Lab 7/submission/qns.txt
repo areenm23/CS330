@@ -1,0 +1,19 @@
+Part 1
+------
+Q1. Briefly explain your implementation logic to handle wrap-around in the trace buffer.
+	Used MODULUS on the index for so that i can move back to zero when i tries to go beyond 4096
+Q2. Can a write to trace buffer return 0 even if we pass non-zero size to the system call? Why or Why not?
+	Yes If Read and write point to same location and further bytes after write index has not read then we can't
+	write anything to the trace buffer so i returns 0.
+Q3. Explain the expected behavior of testcase9.c.  
+	ALready 0, 1, 2 is assigned for stdin, stdout, stderr. So at max 29 files can be created fd[29] is 30th file which can't be created
+	after closinf fd[0] we are removing file object at index 3 so creation happens at index 3
+Part 2
+------
+Q1. In testcase3.c, what address `caddr' represent? How it is formulated in the user space?
+	
+Q2. How do you explain the invocation of tb_read() and tb_write() when a read/write syscall is performed?
+
+	
+
+   

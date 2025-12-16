@@ -1,0 +1,57 @@
+Part1
+-----
+
+Q1. In testcase1.c, how many times the swapper process got scheduled?
+	10 times swapper process was  scheduled in testcase.
+
+Q2. In testcase3.c, how many times the swapper process is scheduled and why?
+	
+	process 1 has been sleep for 10 sec then process 2, 3, 4 will take the cpu. but from info 2,3, 4 has completed early than 10sec
+	so swapper must take until process 1 comes back to ready state. Number of time swapper schedules It completely depends on
+	execution time of process 2, 3, 4.	
+
+
+Q3. In testcase5.c, how many times the sum value was less than 10 and why?    
+
+	sum is less than 10,  22 times it 5, 3, 1, 2, 1, 10 for 2, 3, 4, 5, 6, 1 respectively.
+
+Part 2
+------
+
+Q1. In testcase1.c, in which level the page table entries for the two addresses
+for which walk_pt is called diverse and why?
+
+	Level 3 page entry is diverse because difference between vitual addresses is high.	
+
+
+
+
+Q2. In testcase2.c, reason about the page table entries at different levels for 
+(ptr+4096) across different invocation of walk_pt. Specifically, differentiate
+the entries w.r.t. the entries corresponding to (ptr)
+
+
+
+
+
+
+Q3. Explain the gemOS physical memory allocation logic for the user stack
+    region by examining the o/p of testcase4.c.
+
+
+
+Q4. In testcase5.c, the PFN used to maintain L4 page table for the two addresses
+    are same. (True/False) with justification.
+
+
+	No they are not same.
+
+	
+
+Q5. Which bit is used to maintain the `write' permission for a page? Justify. 
+
+	write bit 3 Lowest significant bit. 
+	in first testcase accessflags are like 1B, 1B, 1B, 11 it means 1011 -- 1001 write bit for pages tables should be or write bit of next page
+	tables so from the testcase it means 3LSB is only possible.
+
+      
